@@ -1,0 +1,7 @@
+<div class="hero-detail-container" *ngIf="hero">
+  <h1 (click)="selectHero(hero.name)">{{hero.name}}</h1>
+  <img src="{{hero.thumbnail.path}}/portrait_xlarge.jpg" alt="">
+  <p>Number of stories available: {{hero.stories.available}}</p>
+</div>
+
+<app-best-hero [bestHero]="selectedHeroName"></app-best-hero>

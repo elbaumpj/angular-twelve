@@ -1,0 +1,9 @@
+<h1>Hero List</h1>
+<ul>
+  <li *ngFor="let hero of heroes">
+    <div>
+      <a routerLink="/hero/{{hero.id}}"><h3>{{hero.name}}</h3></a>
+      <!-- <img src="{{hero.thumbnail.path}}/portrait_xlarge.jpg" alt=""> -->
+    </div>
+  </li>
+</ul>
